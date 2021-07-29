@@ -1,0 +1,41 @@
+@import url('normalize.css');
+@import url('main.css');
+@import url('fonts.css');
+@import url('01_color_typography.css');
+@import url('02_base.css');
+html {
+    height: 100%;
+    padding: 0;
+}
+body {
+    height: 100%;
+}
+nav {
+    padding: 3em 2em;
+    background-color: var(--sw-3);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 160px;
+}
+nav img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 3em;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    padding: 1em 0;
+    font-weight: 700;
+}
+main {
+    margin: 0;
+    padding: 5em 5em 5em 300px;
+/*    background: red;*/
+    height: 100%;
+}
