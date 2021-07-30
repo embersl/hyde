@@ -8,20 +8,18 @@ html {
     padding: 0;
 }
 body {
-    height: 100%;
+/*    height: 100%;*/
 }
 nav {
-    padding: 3em 2em;
+    padding: 3em 1em;
     background-color: var(--sw-3);
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 160px;
+    width: 192px;
 }
-nav img {
-    display: block;
-    max-width: 100%;
+nav > img {
     margin-bottom: 3em;
 }
 nav ul {
@@ -30,12 +28,96 @@ nav ul {
     padding: 0;
 }
 nav ul li {
-    padding: 1em 0;
+    padding: 1em 1em 1em 2.5em;
     font-weight: 700;
+    position: relative;
+}
+nav ul img {
+    position: absolute;
+    top: 1em;
+    left: 0;
 }
 main {
     margin: 0;
     padding: 5em 5em 5em 300px;
 /*    background: red;*/
     height: 100%;
+}
+main > *:nth-child(even) {
+/*    background-color: var(--sw-2-5);*/
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+.registery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 16px;
+}
+.registery figure {
+    border-radius: 8px;
+    background-color: var(--sw-3);
+    overflow: hidden;
+    margin: 0;
+    box-shadow: var(--boxshadow-card);
+}
+.registery .bg {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+/*
+.registery .test {
+    background: blue;
+    height: 200px;
+}
+*/
+.registery .avatar {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: 4px solid var(--sw-16);
+    margin: -36px 0 0 2em;
+    position: relative;
+/*    z-index: 0;*/
+    box-shadow: var(--boxshadow-card);
+}
+.avatar.red {
+    background-color: coral;
+}
+.avatar.blue {
+    background-color: lightblue;
+}
+.avatar.green {
+    background-color: darkseagreen;
+}
+.avatar.yellow {
+    background-color: yellow;
+}
+.registery h4 {
+    margin: -24px 16px 0 auto;
+    text-align: right;
+/*    padding-right: 2em;*/
+}
+
+figure figcaption {
+    padding: 16px;
+}
+h3 {
+    margin: 0 0 16px;
+}
+.btn {
+    display: block;
+    padding: 4px 16px;
+    width: max-content;
+    background-color: var(--sw-4);
+    color: var(--sw-14);
+    border-radius: 999px;
+    margin: 16px 0 0 auto;
+    font-weight: 700;
+}
+figcaption p {
+    margin: 0;
 }
