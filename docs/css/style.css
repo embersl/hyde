@@ -28,7 +28,7 @@ nav ul {
     padding: 0;
 }
 nav ul li {
-    padding: 1em 1em 1em 2.5em;
+    padding: 1em 1em 1em 2.2em;
     font-weight: 700;
     position: relative;
 }
@@ -39,7 +39,7 @@ nav ul img {
 }
 main {
     margin: 0;
-    padding: 5em 5em 5em 300px;
+    padding: 5em 5em 5em 304px;
 /*    background: red;*/
     height: 100%;
 }
@@ -53,6 +53,9 @@ main > *:nth-child(even) {
     }
     nav {
         position: absolute;
+    }
+    main {
+        padding: 80px 32px 80px 256px;
     }
 }
 
