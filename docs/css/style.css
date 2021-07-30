@@ -46,6 +46,15 @@ main {
 main > *:nth-child(even) {
 /*    background-color: var(--sw-2-5);*/
 }
+@media screen and (max-width: 767px) {
+    body {
+        min-width: calc(100vw + 192px + 32px);
+        position: relative;
+    }
+    nav {
+        position: absolute;
+    }
+}
 
 img {
     max-width: 100%;
