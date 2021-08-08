@@ -226,7 +226,7 @@ figure:is(:hover, :focus-within) .bg {
     column-gap: var(--margin-s);
 }
 .m_archives li {
-    break-inside: avoid-column;
+    break-inside: avoid;
 }
 .m_archives li + li {
     margin-top: var(--margin-l)
@@ -262,7 +262,7 @@ figure:is(:hover, :focus-within) .bg {
     column-gap: var(--margin-s);
 }
 .m_links li {
-    break-inside: avoid-column;
+    break-inside: avoid;
 }
 .m_links li + li {
     margin-top: var(--margin-l);
