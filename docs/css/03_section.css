@@ -212,8 +212,7 @@ figure:is(:hover, :focus-within) .bg {
     padding: 12px 16px 20px;
 }
 .m_registery .btn {
-
-/*    display: none;*/
+    display: none;
 }
 
 .m_registery figcaption p {
