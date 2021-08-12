@@ -1,0 +1,141 @@
+:root {
+    --margin-xs: 4px;
+    --margin-s: 8px;
+    --margin-m: 16px;
+    --margin-l: 32px;
+    --margin-xl: 48px;
+    --padding-section: 32px 16px;
+}
+
+@media screen and (min-width: 460px) {
+    :root {
+    --margin-xs: 6px;
+    --margin-s: 12px;
+    --margin-m: 20px;
+    --margin-l: 36px;
+    --margin-xl: 52px;
+    --padding-section: 32px;
+}
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+    --margin-xs: 8px;
+    --margin-s: 16px;
+    --margin-m: 24px;
+    --margin-l: 40px;
+    --margin-xl: 56px;
+    --padding-section: 48px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+    --margin-xs: 10px;
+    --margin-s: 20px;
+    --margin-m: 28px;
+    --margin-l: 44px;
+    --margin-xl: 60px;
+    --padding-section: 64px;
+}
+}
+
+@media screen and (min-width: 1240px) {
+    :root {
+    --margin-xs: 12px;
+    --margin-s: 24px;
+    --margin-m: 32px;
+    --margin-l: 48px;
+    --margin-xl: 64px;
+}
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*==========  generic color settings  ==========*/
+html {
+    padding: 0;
+    overflow-x: hidden;
+/*    prevents hor scroll on mobile, body alone isn't working */
+
+}
+body {
+    overflow-x: hidden;
+    background-color: var(--sw-2);
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+section h2 + p {
+    margin: 0 0 var(--margin-l);
+}
+figure {
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h2 img {
+    display: inline;
+    margin-left: 16px;
+    width: 32px;
+}
+h3 .material-icons {
+    background-color: var(--sw-3);
+/*    padding: 8px;*/
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    line-height: 48px;
+    border-radius: 50%;
+    vertical-align: sub;
+}
+
+*:last-child:last-child {
+    margin-bottom: 0;
+}
+
+.content {
+/*transform doesn't require 100% width to maintain size when it moves outside screen*/
+    transition: transform 0.2s ease-in-out;
+}
+
+.content > * {
+    padding: var(--padding-section);
+}
+.content h2, .content h2 + p {
+    max-width: var(--w-wrapper);
+    margin-left: auto;
+    margin-right: auto;
+}
+.content > *:nth-child(even) {
+        background-color: var(--sw-1-5);
+}
+.w-wrapper {
+    max-width: var(--w-wrapper);
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    display: block;
+    padding: 4px 16px 6px;
+    width: max-content;
+    background-color: var(--sw-4);
+    border-radius: 999px;
+    margin: 16px 0 0 auto;
+    font-weight: 700;
+}
+.btn:hover {
+    background-color: var(--sw-4-5);
+}
