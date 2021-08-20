@@ -52,7 +52,6 @@
 
 html {
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -61,6 +60,7 @@ html {
 /*==========  generic color settings  ==========*/
 html {
     padding: 0;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 /*    prevents hor scroll on mobile, body alone isn't working */
 
@@ -86,11 +86,6 @@ img {
     max-width: 100%;
     display: block;
 }
-h2 img {
-    display: inline;
-    margin-left: 16px;
-    width: 32px;
-}
 h3 .material-icons {
     background-color: var(--sw-3);
 /*    padding: 8px;*/
@@ -114,15 +109,10 @@ h3 .material-icons {
 .content > * {
     padding: var(--padding-section);
 }
-.content h2, .content h2 + p {
-    max-width: var(--w-wrapper);
-    margin-left: auto;
-    margin-right: auto;
-}
 .content > *:nth-child(even) {
         background-color: var(--sw-1-5);
 }
-.w-wrapper {
+.w-wrapper, .content h2, .content h2 + p {
     max-width: var(--w-wrapper);
     margin-left: auto;
     margin-right: auto;

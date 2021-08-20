@@ -154,10 +154,6 @@ sup {
 .material-icons {
     vertical-align: middle;
 }
-.paragraphrule {
-    max-width: 33%;
-    margin: var(--marginlarge) auto;
-}
 .quote {
     font-style: italic;
 }

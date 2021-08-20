@@ -141,7 +141,6 @@
     border-radius: 6px;
     background-color: var(--sw-3);
     overflow: hidden;
-    margin: 0;
     box-shadow: var(--boxshadow-card);
 }
 .m_registery .bg {
@@ -225,7 +224,6 @@ figure:is(:hover, :focus-within) .bg {
     column-gap: var(--margin-s);
 }
 .m_archives li {
-/*    break-inside: avoid-column;*/
     break-inside: avoid;
 }
 .m_archives li + li {
@@ -233,7 +231,7 @@ figure:is(:hover, :focus-within) .bg {
 }
 .m_archives article {
     display: flex;
-    max-width: 560px;
+/*    max-width: 560px;*/
     margin: 0 auto 8px;
     overflow: hidden;
     border-radius: 4px;
@@ -245,12 +243,9 @@ figure:is(:hover, :focus-within) .bg {
     margin-bottom: var(--margin-m);
 }
 .m_archives figure {
-/*    flex-basis: 50%;*/
-    width: 40%;
+    flex-basis: 40%;
 /*    max-width: 192px;*/
     position: relative;
-    padding: 0;
-    margin: 0;
 }
 .m_archives figure img {
     width: 100%;
