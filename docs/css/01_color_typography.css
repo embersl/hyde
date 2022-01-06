@@ -35,6 +35,8 @@
     --sw-15: #f0f0f0;
     --sw-15-5: #f8f8f8;
     --sw-16: #ffffff;
+    --sw-gold: #ffe8ae;
+    --sw-gold-dark: #352b12;
     --50transparent: #ffffff80;
     --70transparent: #ffffffbb;
     --100transparent: #ffffffff;
@@ -64,7 +66,7 @@
 
 /*==========  generic block type settings  ==========*/
 html {
-    color: var(--sw-14);
+    color: var(--sw-13);
     line-height: 1.5;
 }
 body {
@@ -81,7 +83,7 @@ h2 {
     font-size: var(--h2);
     font-weight: 900; 
     margin: 0 0 8px;
-    color: var(--sw-13);
+    color: var(--sw-14);
 }
 
 h3 {
@@ -89,6 +91,7 @@ h3 {
     font-size: var(--h3);
     font-weight: 500;
     margin: 0 0 8px;
+    color: var(--sw-15);
 }
 
 h4 {
@@ -120,7 +123,7 @@ a:visited {
 /*    color: var(--sw-12);*/
 }
 a:hover, a:focus {
-    color: var(--sw-14);
+    color: var(--sw-16);
 /*    text-decoration: underline;*/
 }
 a:active {
