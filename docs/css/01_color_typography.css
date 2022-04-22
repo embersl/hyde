@@ -87,9 +87,9 @@ h2 {
 }
 
 h3 {
-    font-family: 'roboto slab', georgia, serif;
+    font-family: 'pulp', georgia, serif;
     font-size: var(--h3);
-    font-weight: 500;
+    font-weight: bold;
     margin: 0 0 8px;
     color: var(--sw-15);
 }
@@ -134,7 +134,7 @@ em {
     font-style: italic;
 }
 cite {
-    font-family: 'roboto slab', helvetica, arial, sans-serif;
+    font-family: 'pulp', helvetica, arial, sans-serif;
     font-style: normal;
     font-weight: 500;
 }
