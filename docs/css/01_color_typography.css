@@ -103,7 +103,7 @@ h4 {
 
 footer > p {
 /*    keep footer container margin 1em = 16px */
-    font-size: var(--fine-print);
+/*    font-size: var(--fine-print);*/
 }
 
 p {

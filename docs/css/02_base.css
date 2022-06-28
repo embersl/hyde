@@ -5,6 +5,7 @@
     --margin-l: 32px;
     --margin-xl: 48px;
     --padding-section: 32px 16px;
+    --w-wrapper: 1680px;
 }
 
 @media screen and (min-width: 460px) {
@@ -121,6 +122,7 @@ h3 .material-icons {
     display: block;
     padding: 4px 16px 6px;
     width: max-content;
+    color: var(--sw-13);
     background-color: var(--sw-4);
     border-radius: 999px;
     margin: 16px 0 0 auto;
